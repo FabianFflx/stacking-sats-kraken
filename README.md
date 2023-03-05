@@ -1,17 +1,5 @@
 # Stacking Sats on Kraken
 
-First off: Here's to you, [Bittr](https://getbittr.com/) – you will be missed! 😢
-
-This script is not a full replacement for the incredible service Bittr offered, but it's a start:
-Automate your Stacking Sats process by regularly placing buy orders using the [Kraken API](https://www.kraken.com/features/api).
-
----
-
-The original [Bittr is back](https://getbittr.com/press-releases/bittr-is-back)!
-This script is still fully working.
-
----
-
 ## ✋ Caveat
 
 You need to install the dependency [kraken-api](https://github.com/nothingisdead/npm-kraken-api), which is a third-party package.
@@ -41,7 +29,7 @@ KRAKEN_API_SECRET="privateKeyFromTheKrakenSettings"
 
 # used for buying
 KRAKEN_ORDER_TYPE="market" # "limit" (default) or "market"
-KRAKEN_API_FIAT="USD" # the governmental shitcoin you are selling
+KRAKEN_API_FIAT="USD" # fiat currency
 KRAKEN_BUY_AMOUNT=21 # fiat amount you trade for the future of money
 KRAKEN_FEE_CURRENCY="XBT" # pay fee in this currency, e.g. buying XBT for USD and paying fee in XBT
 #KRAKEN_BUY_RATIO=0.99 # place order at 99% of current bid price, e.g. to ensure maker fees
@@ -134,7 +122,7 @@ You should see something like this sample output:
 📎 Transaction ID: 2121212121
 ```
 
-## 🤑 Stack sats
+##  Stack sats
 
 When you are good to go, execute this command in a regular interval:
 
@@ -179,9 +167,7 @@ From: satstacker@example.org
 To: $recipient $result" | /usr/sbin/sendmail $recipient
 ```
 
-Make it executable with `chmod +x stacksats.sh` and go wild.
-
-[Stay humble!](https://twitter.com/matt_odell/status/1117222441867194374) 🙏
+Make it executable with `chmod +x stacksats.sh`
 
 ## 🔑 Withdrawal
 
