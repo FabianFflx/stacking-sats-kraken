@@ -18,6 +18,7 @@
     "test:withdraw": "node index.js --cmd=withdraw --validate"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "kraken-api": "1.0.1"
   }
 }

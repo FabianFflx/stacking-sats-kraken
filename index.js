@@ -1,5 +1,6 @@
 const assert = require('assert')
 const Kraken = require('kraken-api')
+require('dotenv').config();
 
 const getEnv = (...vars) => vars.map(name => {
   const value = process.env[name]
